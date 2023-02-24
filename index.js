@@ -8,7 +8,6 @@ mongo.connect("mongodb+srv://admin:admin@cluster0.ddhij74.mongodb.net/?retryWrit
 .catch((err)=>console.log(err))
 
 
-
 app.use(express.json())
 app.use("/auth", require("./router/auth-router"))
 app.use("/posts",require("./router/post-router"))
